@@ -31,6 +31,11 @@ nav {
   color: white;
 }
 
+.nav__bar a {
+  color: white;
+  text-decoration: none;
+}
+
 .nav__home {
   margin: auto auto auto 65px;
 }
@@ -41,11 +46,8 @@ nav {
   margin: auto 65px auto auto;
   padding: 0;
 }
-
-.nav__menu a {
+.nav__menu > li {
   padding-right: 20px;
-  color: white;
-  text-decoration: none;
 }
 
 /* Header */
