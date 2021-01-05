@@ -9,10 +9,6 @@ body {
   height: 100%;
 }
 
-img {
-  display: block;
-}
-
 .container {
   max-width: 1000px;
   text-align: center;
@@ -24,6 +20,7 @@ nav {
   width: 100%;
   background-color: black;
 }
+
 .nav__bar {
   display: grid;
   grid-template-columns: 1fr 1fr;
@@ -51,8 +48,26 @@ nav {
 }
 
 /* Header */
-.hero > img {
+.hero {
+  position: relative;
   width: 100%;
+  height: fit-content;
+}
+
+.hero__img {
+  position: absolute;
+  z-index: -1;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: url("/images/heros/hero-image_2.jpg") center center;
+  opacity: 0.8;
+}
+
+.hero__text {
+  padding: 150px;
+  font-size: xx-large;
 }
 
 /* Main */
