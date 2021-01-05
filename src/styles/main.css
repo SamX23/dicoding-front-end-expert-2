@@ -38,7 +38,7 @@ nav {
 .nav__menu {
   display: flex;
   list-style: none;
-  margin: auto;
+  margin: auto 65px auto auto;
   padding: 0;
 }
 
@@ -47,6 +47,9 @@ nav {
 }
 
 /* Header */
+.hero > img {
+  width: 100%;
+}
 
 /* Main */
 main {
