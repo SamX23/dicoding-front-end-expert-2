@@ -5,7 +5,7 @@
 
 Kriteria Submission
 
-1. App Bar (Navigation Bar)
+1. App Bar (Navigation Bar) - #checked
    Syarat:
    Menampilkan nama aplikasi atau brand logo dari aplikasi katalog restoran (tentukan sendiri nama aplikasi atau brand logonya).
    Terdapat navigation menu:
