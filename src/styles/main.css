@@ -42,8 +42,10 @@ nav {
   padding: 0;
 }
 
-.nav__menu > li {
+.nav__menu a {
   padding-right: 20px;
+  color: white;
+  text-decoration: none;
 }
 
 /* Header */
