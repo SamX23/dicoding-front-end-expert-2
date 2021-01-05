@@ -24,7 +24,7 @@ Kriteria Submission
    Menampilkan daftar restoran berdasarkan data yang sudah disediakan di dalam project starter (src -> DATA.json), untuk menampilkannya boleh melalui cara hardcoded di berkas HTML, atau menggunakan DOM manipulation menggunakan JavaScript.
    Minimal menampilkan gambar, kota, rating, dan deskripsi (bisa diberi maksimal teks) dari restoran.
 
-4. Footer
+4. Footer - #checked
    Syarat:
    Terdapat footer yang ditampilkan di bawah halaman.
    Terdapat konten copyright mencangkup tahun dan nama aplikasi. Contoh: “Copyright © 2020 - Hunger Apps”.
