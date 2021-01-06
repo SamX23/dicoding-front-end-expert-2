@@ -42,3 +42,16 @@ Kriteria Submission
    Terdapat alternative teks pada seluruh gambar yang ditampilkan. Bila hanya gambar tidak memiliki arti apapun, cukup berikan atribut alt dengan nilai kosong.
    Ukuran elemen button/tautan harus memiliki ukuran minimal 44x44px.
    Menggunakan semantic element dalam menyusun struktur dan landmarking HTML.
+
+### Saran
+
+Menerapkan tampilan aplikasi yang menarik:
+
+- Memiliki pemilihan warna yang pas dengan tema aplikasi (Dalam memilih warna, Anda dapat memanfaatkan tools pemilihan warna seperti colorhunt.co).
+- Tata letak elemen yang pas. Contoh: Tidak ada konten yang bertumpuk.
+- Penggunaan font yang pas dengan tema.
+- Penerapan padding, margin yang pas.
+
+Terdapat konten tambahan yang relevan dengan tema aplikasi, di luar dari data yang disediakan.
+
+Menggunakan elemen secara bijak sesuai dengan fungsinya. Contoh: Tidak menggunakan button sebagai anchor, ataupun sebaliknya.
