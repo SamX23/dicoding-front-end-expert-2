@@ -19,7 +19,7 @@ Kriteria Submission
    Menampilkan hero element (berukuran full width) dengan gambar yang sudah ditentukan, silakan pilih salah satu aset yang disediakan di dalam starter proyek, src -> public -> images -> hero. Gambar yang tidak digunakan, bisa Anda hapus.
    Terdapat teks yang ditampilkan pada hero elemen. Konten teks bebas, namun akan lebih baik jika relevan dengan konten yang ditampilkan.
 
-3. Daftar Restoran
+3. Daftar Restoran #checked
    Syarat:
    Menampilkan daftar restoran berdasarkan data yang sudah disediakan di dalam project starter (src -> DATA.json), untuk menampilkannya boleh melalui cara hardcoded di berkas HTML, atau menggunakan DOM manipulation menggunakan JavaScript.
    Minimal menampilkan gambar, kota, rating, dan deskripsi (bisa diberi maksimal teks) dari restoran.
