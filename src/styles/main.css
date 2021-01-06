@@ -75,6 +75,18 @@ main {
   max-width: 1200px;
 }
 
+.cards {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  margin: 5px;
+}
+
+.card__item {
+  border: 2px solid gray;
+  border-radius: 20px;
+  margin: 5px;
+}
+
 /* Footer */
 footer {
   display: grid;
