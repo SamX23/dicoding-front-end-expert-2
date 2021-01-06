@@ -1,0 +1,22 @@
+@media screen and (max-width: 850px) {
+}
+
+@media screen and (max-width: 650px) {
+  .cards {
+    margin: 30px;
+  }
+
+  .cards {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+@media screen and (max-width: 450px) {
+  #hamburger {
+    display: inline-block;
+  }
+
+  .cards {
+    grid-template-columns: 1fr;
+  }
+}

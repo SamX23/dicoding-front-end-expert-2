@@ -25,6 +25,7 @@ body {
   height: 100%;
   position: absolute;
   transform: translate(-250px, 0);
+  z-index: 1;
   transition: transform 0.3s ease-in-out;
   background-color: #111;
 }
