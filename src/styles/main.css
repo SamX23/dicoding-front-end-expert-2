@@ -83,14 +83,52 @@ main {
 
 .card__item {
   border: 2px solid gray;
-  border-radius: 20px;
-  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  border-radius: 0 0 20px 20px;
+  box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
   transition: 0.3s;
   margin: 5px;
 }
 
 .card__item:hover {
-  box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
+  box-shadow: 0 4px 8px 0 rgba(54, 141, 255, 0.637);
+}
+
+.card__image {
+  position: relative;
+}
+
+.card__image > img {
+  width: 100%;
+  max-height: 170px;
+  object-fit: cover;
+}
+
+.card__image > span {
+  position: absolute;
+  top: 5px;
+  background-color: rgb(255, 252, 82);
+  padding: 7px;
+  border-radius: 50px;
+}
+
+.card__imageLeft {
+  left: 5px;
+}
+
+.card__imageRight {
+  right: 5px;
+}
+
+.card__content {
+  padding: 5px;
+}
+
+.card__content > h4 {
+  padding: 5px;
+}
+
+.card__content > p {
+  text-align: justify;
 }
 
 /* Footer */
