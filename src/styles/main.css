@@ -19,6 +19,36 @@ body {
   margin: auto;
 }
 
+/* Drawer */
+#drawer {
+  width: 250px;
+  height: 100%;
+  position: absolute;
+  transform: translate(-250px, 0);
+  transition: transform 0.3s ease-in-out;
+  background-color: #111;
+}
+
+#drawer.open {
+  transform: translate(0, 0);
+}
+
+#drawer li {
+  padding: 4px 15px;
+  font-size: x-large;
+}
+
+#drawer a {
+  text-decoration: none;
+  color: #dddddd;
+}
+
+#hamburger {
+  display: none;
+  font-size: 32px;
+  color: #dddddd;
+}
+
 /* Navbar */
 nav {
   width: 100%;
