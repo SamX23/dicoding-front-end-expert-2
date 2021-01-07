@@ -1,5 +1,5 @@
 /* Pallete https://colorhunt.co/palette/225760 */
-
+@import url("https://fonts.googleapis.com/css2?family=Monoton&family=Passion+One&display=swap");
 * {
   box-sizing: border-box;
   margin: 0;
@@ -74,6 +74,13 @@ body {
 
 .nav__home {
   margin: auto auto auto 65px;
+  font-family: "Monoton", cursive;
+}
+
+.nav__home > a {
+  letter-spacing: 10px;
+  font-size: xx-large;
+  color: #f05454;
 }
 
 .nav__menu {
@@ -84,6 +91,8 @@ body {
 }
 .nav__menu > li {
   padding-right: 20px;
+  font-family: "Passion One", cursive;
+  letter-spacing: 2px;
 }
 
 /* Header */
@@ -130,6 +139,16 @@ main {
   margin: 50px;
 }
 
+.main__header > h2 {
+  font-size: xx-large;
+  padding-bottom: 10px;
+  border-bottom: #222831 5px dashed;
+}
+
+.main__header > p {
+  margin-top: 10px;
+}
+
 .cards {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
@@ -151,6 +170,10 @@ main {
 
 .card__image {
   position: relative;
+}
+
+.card__image:hover {
+  cursor: pointer;
 }
 
 .card__image > img {
