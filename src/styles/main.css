@@ -197,15 +197,15 @@ main {
 
 .card__imageRight {
   right: 5px;
-  background-color: #f05454;
+  background-color: #f73838;
   color: white;
 }
 
 .card__content {
-  padding: 1em;
+  padding: 0 1em 1em 1em;
 }
 
-.card__content > h4 {
+.card__content > h3 {
   padding: 0.5em;
 }
 
