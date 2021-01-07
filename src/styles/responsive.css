@@ -1,4 +1,10 @@
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 850px) {
+  .card__image > img {
+    height: 145px;
+  }
+}
+
+@media screen and (max-width: 650px) {
   .hero__text {
     padding: 25%;
     font-size: large;
@@ -7,6 +13,10 @@
   .cards {
     margin: 30px;
     grid-template-columns: 1fr 1fr;
+  }
+
+  .card__image > img {
+    max-height: 145px;
   }
 }
 
