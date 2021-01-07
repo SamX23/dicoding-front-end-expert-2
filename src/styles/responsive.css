@@ -1,7 +1,7 @@
 @media screen and (max-width: 850px) {
 }
 
-@media screen and (max-width: 650px) {
+@media screen and (max-width: 600px) {
   .cards {
     margin: 30px;
   }
@@ -12,10 +12,20 @@
 }
 
 @media screen and (max-width: 450px) {
-  #hamburger {
-    display: inline-block;
+  .nav__menu {
+    display: none;
   }
 
+  #hamburger {
+    display: inline-block;
+    margin: auto;
+    margin-right: 50px;
+  }
+
+  .hero__text {
+    padding: 30px;
+    font-size: x-large;
+  }
   .cards {
     grid-template-columns: 1fr;
   }

@@ -21,13 +21,14 @@ body {
 
 /* Drawer */
 #drawer {
-  width: 250px;
+  width: 200px;
   height: 100%;
   position: absolute;
   transform: translate(-250px, 0);
-  z-index: 1;
+  z-index: 2;
   transition: transform 0.3s ease-in-out;
   background-color: #111;
+  padding-top: 55px;
 }
 
 #drawer.open {
@@ -52,12 +53,11 @@ body {
 
 /* Navbar */
 #navbar {
-  overflow: hidden;
   position: fixed;
   top: 0;
   width: 100%;
   background-color: #222831;
-  z-index: 1;
+  z-index: 5;
 }
 
 .nav__bar {
@@ -120,12 +120,12 @@ header {
 
 .hero__text {
   padding: 150px;
+  font-size: 30px;
 }
 
 .hero__heading {
   color: #f05454;
   font-weight: 800;
-  font-size: 75px;
   letter-spacing: 5px;
   text-shadow: 5px 5px #222831;
 }
