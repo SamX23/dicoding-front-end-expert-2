@@ -31,29 +31,16 @@ Kriteria Submission
    Terdapat footer yang ditampilkan di bawah halaman.
    Terdapat konten copyright mencangkup tahun dan nama aplikasi. Contoh: “Copyright © 2020 - Hunger Apps”.
 
-5. Responsibilitas Tampilan
+5. Responsibilitas Tampilan #chekced
    Syarat:
    Tampilan web app harus responsif pada seluruh ukuran layar (mobile - tablet - desktop). Utamakan tampilan mobile terlebih dahulu.
    Gunakan teknik Grid CSS atau Flexbox dalam menyusun layout. Bila terdapat float, submission akan ditolak.
    Menetapkan ukuran viewport secara dinamis berdasarkan layar device yang digunakan.
 
-6. Aksesibilitas Website
+6. Aksesibilitas Website #chekced
    Syarat:
    Seluruh fungsionalitas website dapat dilakukan dengan menggunakan keyboard. Contohnya mengakses tombol hamburger button, mengakses tautan yang ada.
    Menerapkan teknik skip to content untuk melewati focus pada menu navigasi.
    Terdapat alternative teks pada seluruh gambar yang ditampilkan. Bila hanya gambar tidak memiliki arti apapun, cukup berikan atribut alt dengan nilai kosong.
    Ukuran elemen button/tautan harus memiliki ukuran minimal 44x44px.
    Menggunakan semantic element dalam menyusun struktur dan landmarking HTML.
-
-### Saran
-
-Menerapkan tampilan aplikasi yang menarik:
-
-- Memiliki pemilihan warna yang pas dengan tema aplikasi (Dalam memilih warna, Anda dapat memanfaatkan tools pemilihan warna seperti colorhunt.co).
-- Tata letak elemen yang pas. Contoh: Tidak ada konten yang bertumpuk.
-- Penggunaan font yang pas dengan tema.
-- Penerapan padding, margin yang pas.
-
-Terdapat konten tambahan yang relevan dengan tema aplikasi, di luar dari data yang disediakan.
-
-Menggunakan elemen secara bijak sesuai dengan fungsinya. Contoh: Tidak menggunakan button sebagai anchor, ataupun sebaliknya.
