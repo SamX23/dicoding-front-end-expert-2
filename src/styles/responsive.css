@@ -1,17 +1,16 @@
-@media screen and (max-width: 850px) {
-}
-
 @media screen and (max-width: 600px) {
-  .cards {
-    margin: 30px;
+  .hero__text {
+    padding: 25%;
+    font-size: large;
   }
 
   .cards {
+    margin: 30px;
     grid-template-columns: 1fr 1fr;
   }
 }
 
-@media screen and (max-width: 450px) {
+@media screen and (max-width: 500px) {
   .nav__menu {
     display: none;
   }
@@ -26,6 +25,7 @@
     padding: 30px;
     font-size: x-large;
   }
+
   .cards {
     grid-template-columns: 1fr;
   }
