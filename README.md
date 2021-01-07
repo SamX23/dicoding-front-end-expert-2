@@ -1,4 +1,6 @@
-# Submission dicoding front end expert
+## Delicious Dish Web
+
+## Submission dicoding front end expert
 
 - npm start
 - npm build
