@@ -35,10 +35,10 @@ body {
 
 /* Drawer */
 #drawer {
-  width: 200px;
+  width: 250px;
   height: 100%;
   position: absolute;
-  transform: translate(-250px, 0);
+  transform: translate(0, 0);
   z-index: 2;
   transition: transform 0.3s ease-in-out;
   background-color: #111;
@@ -49,9 +49,13 @@ body {
   transform: translate(0, 0);
 }
 
+#drawer > ul {
+  margin-top: 20px;
+}
+
 #drawer li {
-  padding: 4px 15px;
-  font-size: x-large;
+  padding: 8px 15px;
+  font-size: 44px;
 }
 
 #drawer a {
@@ -61,7 +65,7 @@ body {
 
 #hamburger {
   display: none;
-  font-size: 32px;
+  font-size: 44px;
   color: #dddddd;
 }
 
@@ -77,7 +81,7 @@ body {
 .nav__bar {
   display: grid;
   grid-template-columns: 1fr 1fr;
-  height: 50px;
+  height: 60px;
   color: #dddddd;
 }
 
@@ -112,7 +116,7 @@ body {
 /* Header */
 
 header {
-  padding-top: 50px;
+  padding-top: 60px;
 }
 
 .hero {
