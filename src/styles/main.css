@@ -215,8 +215,9 @@ main {
 
 .card__imageRight {
   right: 5px;
-  background-color: #f73838;
-  color: white;
+  background-color: #ff4a4a;
+  color: #000000;
+  font-weight: 700;
 }
 
 .card__content {
