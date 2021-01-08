@@ -38,7 +38,7 @@ body {
   width: 250px;
   height: 100%;
   position: absolute;
-  transform: translate(0, 0);
+  transform: translate(-250px, 0);
   z-index: 2;
   transition: transform 0.3s ease-in-out;
   background-color: #111;
@@ -104,11 +104,11 @@ body {
 .nav__menu {
   display: flex;
   list-style: none;
-  margin: auto 65px auto auto;
+  margin: auto;
   padding: 0;
 }
 .nav__menu > li {
-  padding-right: 20px;
+  padding: 7px;
   font-family: "Passion One", cursive;
   letter-spacing: 2px;
 }
