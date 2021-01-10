@@ -82,7 +82,8 @@ body {
 .nav__bar {
   display: grid;
   grid-template-columns: 1fr 1fr;
-  height: 60px;
+  min-height: 60px;
+  height: auto;
   color: #dddddd;
 }
 
@@ -117,7 +118,7 @@ body {
   display: block;
   width: 100%;
   font-family: "Passion One", cursive;
-  padding: 12px;
+  padding: 15px;
   letter-spacing: 2px;
 }
 
