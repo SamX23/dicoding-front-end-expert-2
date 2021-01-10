@@ -65,8 +65,9 @@ body {
 
 #hamburger {
   display: none;
-  font-size: 44px;
+  font-size: 40px;
   color: #dddddd;
+  padding: 5px;
 }
 
 /* Navbar */
@@ -103,13 +104,20 @@ body {
 
 .nav__menu {
   display: flex;
+  flex-direction: row;
+  justify-content: space-around;
   list-style: none;
-  margin: auto;
-  padding: 0;
 }
 .nav__menu > li {
-  padding: 7px;
+  width: 100%;
+  margin: auto;
+}
+
+.nav__menu > li > a {
+  display: block;
+  width: 100%;
   font-family: "Passion One", cursive;
+  padding: 12px;
   letter-spacing: 2px;
 }
 
