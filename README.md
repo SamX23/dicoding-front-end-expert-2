@@ -1,11 +1,11 @@
-## Delicious Dish Web
+## Delicious Dish Web App
 
 ## Submission dicoding front end expert
 
 - npm start
 - npm build
 
-Kriteria Submission
+## Kriteria Submission I
 
 1. App Bar (Navigation Bar) - #checked
    Syarat:
@@ -44,3 +44,42 @@ Kriteria Submission
    Terdapat alternative teks pada seluruh gambar yang ditampilkan. Bila hanya gambar tidak memiliki arti apapun, cukup berikan atribut alt dengan nilai kosong.
    Ukuran elemen button/tautan harus memiliki ukuran minimal 44x44px.
    Menggunakan semantic element dalam menyusun struktur dan landmarking HTML.
+
+## Kriteria Submission II
+
+1. Halaman Utama (Daftar Restoran)
+   Syarat:
+   Menampilkan daftar restoran yang datanya bersumber dari API https://restaurant-api.dicoding.dev/. Silakan lihat dokumentasinya pada halaman tersebut.
+   Minimal menampilkan gambar, kota, rating, dan deskripsi (bisa diberi maksimal teks) dari restoran.
+   Terdapat tautan/CTA yang mengarah ke detail restoran pada tiap itemnya.
+   Hero elemen tetap dipertahankan.
+
+2. Halaman Detail Restoran
+   Syarat:
+   Menampilkan detail dari restoran yang dipilih dari halaman utama (daftar restoran) atau halaman favorit restoran.
+   Pada halaman detail restoran harus terdapat:
+   Gambar
+   Alamat Lengkap
+   Kategori Menu
+   Menu Makanan
+   Menu Minuman
+   Rating
+   Customer Reviews
+   Terdapat tombol favorite untuk memasukkan atau menghapus restoran favorit dari database (gunakan IndexedDB).
+3. Halaman Daftar Restoran Favorit
+   Syarat:
+   Halaman Daftar Restoran dapat diakses melalui menu navigasi favorit.
+   Menampilkan restoran yang difavoritkan oleh pengguna (data diambil dari indexedDB).
+   Minimal menampilkan gambar, kota, rating, dan deskripsi (bisa diberi maksimal teks) dari restoran.
+   Terdapat tautan/CTA yang mengarah ke detail restoran pada tiap itemnya.
+4. Native Capability
+   Syarat:
+   Aplikasi dapat diakses dalam keadaan offline tanpa ada aset yang gagal dimuat, termasuk data yang didapatkan dari API. Anda bebas menggunakan strategi caching apapun, bahkan menggunakan workbox.
+   Aplikasi harus menampilkan icon Add to Home Screen.
+   Aplikasi memiliki custom icon yang ditampilkan pada home screen dan splash screen.
+5. Code Quality
+   Syarat:
+   Menggunakan ESLint sebagai linter ketika menuliskan kode JavaScript. Harap lampirkan berkas konfigurasi ESLint ya.
+   Menerapkan salah satu style guide baik itu Google JavaScript Code Style, AirBnB JavaScript Code Style, atau StandardJS Code Style.
+6. Pertahankan syarat yang ada pada submission sebelumnya.
+   Seperti responsibilitas tampilan, dan aksesibilitas pada website.
