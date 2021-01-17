@@ -1,0 +1,10 @@
+{
+  "name": "Delicious Dish App",
+  "short_name": "A food catalogue",
+  "description": "Food catalogue web app using webpack",
+  "start_url": "/index.html",
+  "display": "standalone",
+  "background_color": "#ffffff",
+  "theme_color": "#3dabff",
+  "icons": []
+}
