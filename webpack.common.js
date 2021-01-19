@@ -1,5 +1,6 @@
 import HtmlWebpackPlugin from "html-webpack-plugin";
 import CopyWebpackPlugin from "copy-webpack-plugin";
+import ServiceWorkerWebpackPlugin from "serviceworker-webpack-plugin";
 import { resolve } from "path";
 
 export const entry = resolve(__dirname, "src/scripts/index.js");
@@ -34,5 +35,8 @@ export const plugins = [
         to: resolve(__dirname, "dist/"),
       },
     ],
+  }),
+  new ServiceWorkerWebpackPlugin({
+    entry: resolve(__dirname, "src/scripts/sw.js"),
   }),
 ];
