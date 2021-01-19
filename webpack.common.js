@@ -1,40 +1,38 @@
-const HtmlWebpackPlugin = require('html-webpack-plugin');
-const CopyWebpackPlugin = require('copy-webpack-plugin');
-const path = require('path');
+import HtmlWebpackPlugin from "html-webpack-plugin";
+import CopyWebpackPlugin from "copy-webpack-plugin";
+import { resolve } from "path";
 
-module.exports = {
-  entry: path.resolve(__dirname, 'src/scripts/index.js'),
-  output: {
-    path: path.resolve(__dirname, 'dist'),
-    filename: 'bundle.js',
-  },
-  module: {
-    rules: [
-      {
-        test: /\.css$/,
-        use: [
-          {
-            loader: 'style-loader',
-          },
-          {
-            loader: 'css-loader',
-          },
-        ],
-      },
-    ],
-  },
-  plugins: [
-    new HtmlWebpackPlugin({
-      template: path.resolve(__dirname, 'src/templates/index.html'),
-      filename: 'index.html',
-    }),
-    new CopyWebpackPlugin({
-      patterns: [
+export const entry = resolve(__dirname, "src/scripts/index.js");
+export const output = {
+  path: resolve(__dirname, "dist"),
+  filename: "bundle.js",
+};
+export const module = {
+  rules: [
+    {
+      test: /\.css$/,
+      use: [
         {
-          from: path.resolve(__dirname, 'src/public/'),
-          to: path.resolve(__dirname, 'dist/'),
+          loader: "style-loader",
+        },
+        {
+          loader: "css-loader",
         },
       ],
-    }),
+    },
   ],
 };
+export const plugins = [
+  new HtmlWebpackPlugin({
+    template: resolve(__dirname, "src/templates/index.html"),
+    filename: "index.html",
+  }),
+  new CopyWebpackPlugin({
+    patterns: [
+      {
+        from: resolve(__dirname, "src/public/"),
+        to: resolve(__dirname, "dist/"),
+      },
+    ],
+  }),
+];
