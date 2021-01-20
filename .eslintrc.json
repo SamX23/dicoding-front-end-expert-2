@@ -13,6 +13,8 @@
     "linebreak-style": 0,
     "quotes": 0,
     "comma-dangle": 0,
-    "import/no-extraneous-dependencies": 0
+    "import/no-extraneous-dependencies": 0,
+    "no-restricted-globals": 0,
+    "no-console": 0
   }
 }
