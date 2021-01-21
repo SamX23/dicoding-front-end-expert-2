@@ -1,10 +1,10 @@
-import { merge } from "webpack-merge";
-import { resolve } from "path";
-import common from "./webpack.common";
+const { merge } = require("webpack-merge");
+const path = require("path");
+const common = require("./webpack.common");
 
-export default merge(common, {
+module.exports = merge(common, {
   mode: "development",
   devServer: {
-    contentBase: resolve(__dirname, "dist"),
+    contentBase: path.resolve(__dirname, "dist"),
   },
 });
