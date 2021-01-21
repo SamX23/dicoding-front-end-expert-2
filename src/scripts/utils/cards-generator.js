@@ -1,4 +1,4 @@
-const GenerateCards = ({ data }) => {
+const GenerateCards = (data) => {
   const Data = data.restaurants;
 
   Data.forEach((id, idx) => {
