@@ -2,7 +2,6 @@ import Drawer from "../utils/show-drawer";
 import GenerateCards from "../utils/cards-generator";
 import UrlParser from "../routes/url-parser";
 import routes from "../routes/routes";
-import Data from "../../DATA.json";
 
 class App {
   constructor({ button, drawer, content }) {
@@ -18,8 +17,6 @@ class App {
       drawer: this._drawer,
       content: this._content,
     });
-
-    GenerateCards(Data);
   }
 
   async renderPage() {
