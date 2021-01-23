@@ -1,5 +1,4 @@
 import Drawer from "../utils/show-drawer";
-import GenerateCards from "../utils/cards-generator";
 import UrlParser from "../routes/url-parser";
 import routes from "../routes/routes";
 
