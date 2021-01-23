@@ -3,7 +3,9 @@ const Favourite = {
     return `<h2>Render page</h2>`;
   },
 
-  async afterRender() {},
+  async afterRender() {
+    return ``;
+  },
 };
 
 export default Favourite;

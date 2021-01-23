@@ -3,7 +3,9 @@ const Details = {
     return `<h2>Details page</h2>`;
   },
 
-  async afterRender() {},
+  async afterRender() {
+    return ``;
+  },
 };
 
 export default Details;
