@@ -47,14 +47,14 @@
 
 ## Kriteria Submission II
 
-1. Halaman Utama (Daftar Restoran)
+1. Halaman Utama (Daftar Restoran) #half
    Syarat:
    Menampilkan daftar restoran yang datanya bersumber dari API https://restaurant-api.dicoding.dev/. Silakan lihat dokumentasinya pada halaman tersebut.
    Minimal menampilkan gambar, kota, rating, dan deskripsi (bisa diberi maksimal teks) dari restoran.
    Terdapat tautan/CTA yang mengarah ke detail restoran pada tiap itemnya.
    Hero elemen tetap dipertahankan.
 
-2. Halaman Detail Restoran
+2. Halaman Detail Restoran #half
    Syarat:
    Menampilkan detail dari restoran yang dipilih dari halaman utama (daftar restoran) atau halaman favorit restoran.
    Pada halaman detail restoran harus terdapat:
