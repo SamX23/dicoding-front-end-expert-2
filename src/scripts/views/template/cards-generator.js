@@ -1,4 +1,4 @@
-import ENDPOINT from "../globals/api-endpoints";
+import ENDPOINT from "../../globals/api-endpoints";
 
 const GenerateCards = (Data) => {
   if (Data && Data.length > 0) {

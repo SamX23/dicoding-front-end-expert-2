@@ -1,4 +1,4 @@
-import GenerateCards from "../../utils/cards-generator";
+import GenerateCards from "../template/cards-generator";
 import Source from "../../data/source";
 
 const Home = {
