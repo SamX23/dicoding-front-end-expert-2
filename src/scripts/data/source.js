@@ -1,12 +1,15 @@
+import ENDPOINT from "../globals/api-endpoints";
+
 class Source {
   static async List() {
-    const response = await fetch();
+    const response = await fetch(ENDPOINT.LIST);
     const responseJson = await response.json();
-    return responseJson.results;
+    console.log(responseJson.restaurants);
+    return responseJson.restaurants;
   }
 
   static async Details(id) {
-    const response = await fetch(id);
+    const response = await fetch(ENDPOINT.DETAIL(id));
     return response.json();
   }
 }
