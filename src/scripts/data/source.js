@@ -4,7 +4,6 @@ class Source {
   static async List() {
     const response = await fetch(ENDPOINT.LIST);
     const responseJson = await response.json();
-    console.log(responseJson.restaurants);
     return responseJson.restaurants;
   }
 
