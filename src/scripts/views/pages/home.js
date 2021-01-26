@@ -1,4 +1,5 @@
 import GenerateCards from "../../utils/cards-generator";
+import Source from "../../data/source";
 
 const Home = {
   async render() {
@@ -15,7 +16,8 @@ const Home = {
   },
 
   async afterRender() {
-    return GenerateCards();
+    const dish = await Source.List();
+    GenerateCards(dish);
   },
 };
 
