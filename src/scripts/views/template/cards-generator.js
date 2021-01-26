@@ -12,7 +12,7 @@ const GenerateCards = (Data) => {
           <span class='card__imageRight'>${id.rating}</span>
         </div>
         <div class='card__content'>
-          <h3>${id.name}</h3>
+          <h3><a href="${`/#/detail/${id.id}`}">${id.name}</a></h3>
           <p>${id.description}</p>
         </div>
       </div>`;
