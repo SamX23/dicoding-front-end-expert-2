@@ -252,7 +252,8 @@ main {
 
 /* Favourite pages */
 .favourite__container {
-  min-height: 40vh;
+  margin-top: 10vh;
+  min-height: 80vh;
 }
 
 .favourite {
