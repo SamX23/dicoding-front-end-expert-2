@@ -4,6 +4,14 @@ import Source from "../../data/source";
 const Home = {
   async render() {
     return `
+    <header>
+        <div class="hero">
+          <div class="hero__img"></div>
+          <div class="hero__text">
+            <h1 class="hero__heading">DELICIOUS DISH</h1>
+          </div>
+        </div>
+    </header>
     <section class="main__header">
         <h2>Our Best Offering</h2>
         <p>
