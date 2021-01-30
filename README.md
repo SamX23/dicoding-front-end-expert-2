@@ -66,7 +66,7 @@
    Rating
    Customer Reviews
    Terdapat tombol favorite untuk memasukkan atau menghapus restoran favorit dari database (gunakan IndexedDB).
-3. Halaman Daftar Restoran Favorit
+3. Halaman Daftar Restoran Favorit #CHECKED
    Syarat:
    Halaman Daftar Restoran dapat diakses melalui menu navigasi favorit.
    Menampilkan restoran yang difavoritkan oleh pengguna (data diambil dari indexedDB).
@@ -81,5 +81,5 @@
    Syarat:
    Menggunakan ESLint sebagai linter ketika menuliskan kode JavaScript. Harap lampirkan berkas konfigurasi ESLint ya.
    Menerapkan salah satu style guide baik itu Google JavaScript Code Style, AirBnB JavaScript Code Style, atau StandardJS Code Style.
-6. Pertahankan syarat yang ada pada submission sebelumnya.
+6. Pertahankan syarat yang ada pada submission sebelumnya. #CHECKED
    Seperti responsibilitas tampilan, dan aksesibilitas pada website.
