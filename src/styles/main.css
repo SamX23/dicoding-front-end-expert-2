@@ -276,7 +276,7 @@ main {
 /* Detailed Page */
 .detail {
   display: grid;
-  grid-template-areas: "detailHeader detailInfo" "detailOverview detailOverview" "detailReviews";
+  grid-template-areas: "detailHeader detailInfo" "detailOverview detailOverview" "detailReviews detailReviews";
   gap: 15px;
   font-size: x-large;
 }
@@ -320,6 +320,7 @@ main {
   grid-area: detailReviews;
   padding: 25px;
   text-align: left;
+  margin-left: 0 !important;
 }
 
 /* Footer */
