@@ -276,7 +276,7 @@ main {
 /* Detailed Page */
 .detail {
   display: grid;
-  grid-template-areas: "detailHeader detailInfo" "detailOverview detailOverview";
+  grid-template-areas: "detailHeader detailInfo" "detailOverview detailOverview" "detailReviews";
   gap: 15px;
   font-size: x-large;
 }
@@ -314,6 +314,12 @@ main {
   padding: 25px;
   grid-area: detailOverview;
   text-align: justify;
+}
+
+.detail__reviews {
+  grid-area: detailReviews;
+  padding: 25px;
+  text-align: left;
 }
 
 /* Footer */

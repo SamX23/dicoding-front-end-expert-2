@@ -36,11 +36,14 @@
     font-size: large;
   }
 
+  .container__height {
+    margin-top: 5vh;
+  }
   .cards {
     grid-template-columns: 1fr;
   }
 
   .detail {
-    grid-template-areas: "detailHeader" "detailInfo" "detailOverview";
+    grid-template-areas: "detailHeader" "detailInfo" "detailOverview" "detailReviews";
   }
 }

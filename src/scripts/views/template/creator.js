@@ -17,12 +17,13 @@ const DetailedItems = (data) => `
   <div class="detail__header">
     <img class="detail__poster" src=${ENDPOINT.IMG.M}${data.pictureId} alt=${
   data.name
-} />
+}/>
     <h2 class="detail__title">${data.name.toUpperCase()}</h2>
   </div>
   <div class="detail__info">
     <h3>Information</h3>
-    <p>Lokasi : ${data.city}</p>
+    <p>Kota : ${data.city}</p>
+    <p>Alamat : ${data.address}</p>
     <p>Rating : ${data.rating}</p>
     <div class="info__food">
       <h4>Food</h4>
@@ -45,7 +46,12 @@ const DetailedItems = (data) => `
     <h3>Overview</h3>
     <p>${data.description}</p>
   </div>
-  
+  <div class="detail__reviews">
+    <h4>Reviews</h4>
+    <p>Oleh ${data.customerReviews[0].name} : </p>
+    <p>${data.customerReviews[0].review}</p>
+    <p>Pada ${data.customerReviews[0].date}</p>
+  </div>
 `;
 
 export { DetailedItems, Cards };
