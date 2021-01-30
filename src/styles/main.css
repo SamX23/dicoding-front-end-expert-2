@@ -251,7 +251,7 @@ main {
 }
 
 /* Favourite pages */
-.favourite__container {
+.container__height {
   margin-top: 10vh;
   min-height: 80vh;
 }
