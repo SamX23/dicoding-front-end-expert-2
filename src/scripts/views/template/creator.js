@@ -14,12 +14,32 @@ const Cards = (data) =>
   </div>`;
 
 const DetailedItems = (data) => `
-<h2 class="detail__title">${data.title}</h2>
-  <img class="detail__poster" src=${ENDPOINT.IMG.M}${data.pictureId} alt=${data.name} />
+  <div class="detail__header">
+    <img class="detail__poster" src=${ENDPOINT.IMG.M}${data.pictureId} alt=${
+  data.name
+} />
+    <h2 class="detail__title">${data.name.toUpperCase()}</h2>
+  </div>
   <div class="detail__info">
     <h3>Information</h3>
-    <p>${data.city}</p>
-    <p>${data.rating}</p>
+    <p>Lokasi : ${data.city}</p>
+    <p>Rating : ${data.rating}</p>
+    <div class="info__food">
+      <h4>Food</h4>
+      <ul>
+        <li>${data.menus.foods[0].name}</li>
+        <li>${data.menus.foods[1].name}</li>
+        <li>${data.menus.foods[2].name}</li>
+      </ul>
+    </div>
+    <div class="info__drinks">
+      <h4>Drinks</h4>
+      <ul>
+        <li>${data.menus.drinks[0].name}</li>
+        <li>${data.menus.drinks[1].name}</li>
+        <li>${data.menus.drinks[2].name}</li>
+      </ul>
+    </div>
   </div>
   <div class="detail__overview">
     <h3>Overview</h3>

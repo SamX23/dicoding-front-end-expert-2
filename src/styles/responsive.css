@@ -39,4 +39,8 @@
   .cards {
     grid-template-columns: 1fr;
   }
+
+  .detail {
+    grid-template-areas: "detailHeader" "detailInfo" "detailOverview";
+  }
 }

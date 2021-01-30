@@ -273,6 +273,49 @@ main {
   justify-content: center;
 }
 
+/* Detailed Page */
+.detail {
+  display: grid;
+  grid-template-areas: "detailHeader detailInfo" "detailOverview detailOverview";
+  gap: 15px;
+  font-size: x-large;
+}
+
+.detail > div {
+  margin: auto;
+}
+
+.detail__header {
+  grid-area: detailHeader;
+}
+
+.detail__poster {
+  width: 100%;
+}
+
+.detail__title {
+  color: #0d7583;
+}
+
+.detail__info {
+  grid-area: detailInfo;
+  padding: 10px;
+  text-align: left;
+  margin-left: 10px !important;
+}
+
+.detail__info > div > ul {
+  padding: 5px;
+  list-style-type: none;
+}
+
+.detail__overview {
+  border-top: #0d7583 dashed 2px;
+  padding: 25px;
+  grid-area: detailOverview;
+  text-align: justify;
+}
+
 /* Footer */
 footer {
   display: grid;
