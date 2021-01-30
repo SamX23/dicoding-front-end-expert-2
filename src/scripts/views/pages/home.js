@@ -1,4 +1,4 @@
-import GenerateCards from "../template/creator";
+import { Cards } from "../template/creator";
 import Source from "../../data/source";
 
 const Home = {
@@ -28,7 +28,7 @@ const Home = {
     const dishContainer = document.getElementById("card");
     if (dish && dish.length > 0) {
       dish.forEach((item) => {
-        dishContainer.innerHTML += GenerateCards(item);
+        dishContainer.innerHTML += Cards(item);
       });
     }
   },
