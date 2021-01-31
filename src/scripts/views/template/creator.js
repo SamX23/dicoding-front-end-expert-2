@@ -24,7 +24,7 @@ const DetailedItems = (data) => `
     <h3>Information</h3>
     <p>Kota : ${data.city}</p>
     <p>Alamat : ${data.address}</p>
-    <p>Rating : ${data.rating}</p>
+    <p>Rating : ${data.rating}⭐️</p>
     <div class="info__food">
       <h4>Food</h4>
       <ul>
@@ -54,4 +54,17 @@ const DetailedItems = (data) => `
   </div>
 `;
 
-export { DetailedItems, Cards };
+const likeButtonTemplate = () => `
+  <button aria-label="Favourite this dish" id="likeButton" class="like">
+    <i class="fa fa-heart-o" aria-hidden="true"></i>
+  </button>
+`;
+
+const likedButtonTemplate = () => `
+  <button aria-label="Unfavourite this dish" id="likeButton" class="like">
+    <i class="fa fa-heart" aria-hidden="true"></i>
+  </button>
+`;
+
+// eslint-disable-next-line object-curly-newline
+export { DetailedItems, Cards, likeButtonTemplate, likedButtonTemplate };
