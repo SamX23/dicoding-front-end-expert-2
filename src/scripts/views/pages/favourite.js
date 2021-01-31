@@ -1,4 +1,4 @@
-import GenerateCards from "../template/creator";
+import Cards from "../template/creator";
 import FavourieDishIdb from "../../data/object-db";
 
 const Favourite = {
@@ -10,7 +10,6 @@ const Favourite = {
           We serve you the best suggestion for your belly, the best place you
           can get. All about delicous food discovered by masterpiece.
         </p>
-        <div id="favourite" class="favourite"></div>
     </section>
     `;
   },
@@ -19,7 +18,7 @@ const Favourite = {
     const favourite = await FavourieDishIdb.getAllDish();
     const favouriteContainer = document.querySelector("#favourite");
     favourite.forEach((dish) => {
-      favouriteContainer.innerHTML += GenerateCards(dish);
+      favouriteContainer.innerHTML += Cards(dish);
     });
   },
 };
