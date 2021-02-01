@@ -7,27 +7,25 @@ const Details = {
   async render() {
     return `
     <div id="dish__details" class="detail container__height"></div>
+    <div id="likeButtonContainer"></div>
     `;
   },
 
   async afterRender() {
     const url = UrlParser.parseActiveUrlWithoutCombiner();
     const items = await Source.Details(url.id);
-    const detailContainer = document.querySelector("#dish__details");
+    const detailContainer = document.getElementById("dish__details");
     detailContainer.innerHTML = DetailedItems(items.restaurant);
 
     LikeButton.init({
-      likeButtonContainer: document.querySelector("#likeButtonContainer"),
+      likeButtonContainer: document.getElementById("likeButtonContainer"),
       dish: {
-        id: items.id,
-        name: items.name,
-        city: items.city,
-        rating: items.rating,
-        description: items.description,
-        address: items.address,
-        menu: items.menu,
-        customerReviews: items.customerReviews,
-        pictureId: items.pictureId,
+        id: items.restaurant.id,
+        name: items.restaurant.name,
+        city: items.restaurant.city,
+        rating: items.restaurant.rating,
+        description: items.restaurant.description,
+        pictureId: items.restaurant.pictureId,
       },
     });
   },
