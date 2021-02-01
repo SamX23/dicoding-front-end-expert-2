@@ -52,7 +52,6 @@ const DetailedItems = (data) => `
     <p>${data.customerReviews[0].review}</p>
     <p>Pada ${data.customerReviews[0].date}</p>
   </div>
-  <div id="favourite" class="favourite"></div>
 `;
 
 const likeButtonTemplate = () => `
