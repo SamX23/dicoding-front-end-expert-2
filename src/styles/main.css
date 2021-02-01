@@ -190,25 +190,30 @@ main {
   transition: 0.3s;
   margin: 5px;
   background-color: white;
+  cursor: pointer;
 }
 
 .card__item:hover {
-  box-shadow: 0 4px 8px 0 rgba(54, 141, 255, 0.637);
+  box-shadow: 0 6px 10px 0 rgb(15, 64, 129);
+}
+
+.card__item > a {
+  text-decoration: none;
+  color: unset;
+}
+
+.card__item > a:active {
+  color: unset;
 }
 
 .card__image {
   position: relative;
 }
 
-.card__image:hover {
-  cursor: pointer;
-}
-
 .card__image > img {
   width: 100%;
   max-height: 160px;
   object-fit: cover;
-  cursor: default;
 }
 
 .card__image > span {
@@ -237,11 +242,6 @@ main {
 
 .card__content > h3 {
   padding: 0.5em;
-}
-
-.card__content > h3 > a {
-  color: #3d2fff;
-  text-decoration: none;
 }
 
 .card__content > p {

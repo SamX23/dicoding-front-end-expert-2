@@ -2,15 +2,17 @@ import ENDPOINT from "../../globals/api-endpoints";
 
 const Cards = (data) =>
   `<div id=${data.id} class='card__item'>
-    <div class='card__image'>
-      <img src=${ENDPOINT.IMG.M}${data.pictureId} alt=${data.name} />
-      <span class='card__imageLeft'>${data.city}</span>
-      <span class='card__imageRight'>${data.rating}</span>
-    </div>
-    <div class='card__content'>
-      <h3><a href="${`/#/detail/${data.id}`}">${data.name}</a></h3>
-      <p>${data.description}</p>
-    </div>
+    <a href="${`/#/detail/${data.id}`}">
+      <div class='card__image'>
+        <img src=${ENDPOINT.IMG.M}${data.pictureId} alt=${data.name} />
+        <span class='card__imageLeft'>${data.city}</span>
+        <span class='card__imageRight'>${data.rating}</span>
+      </div>
+      <div class='card__content'>
+        <h3>${data.name}</h3>
+        <p>${data.description}</p>
+      </div>
+    </a>
   </div>`;
 
 const DetailedItems = (data) => `
