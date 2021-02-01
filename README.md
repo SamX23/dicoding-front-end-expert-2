@@ -54,7 +54,7 @@
    Terdapat tautan/CTA yang mengarah ke detail restoran pada tiap itemnya.
    Hero elemen tetap dipertahankan.
 
-2. Halaman Detail Restoran #half
+2. Halaman Detail Restoran #CHECKED
    Syarat:
    Menampilkan detail dari restoran yang dipilih dari halaman utama (daftar restoran) atau halaman favorit restoran.
    Pada halaman detail restoran harus terdapat:
