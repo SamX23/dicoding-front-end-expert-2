@@ -37,8 +37,14 @@
   }
 
   .container__height {
-    margin-top: 5vh;
+    margin: 10vh 0 0 0;
   }
+
+  .container__height > h2,
+  .container__height > p {
+    margin: 10px;
+  }
+
   .cards {
     grid-template-columns: 1fr;
   }
