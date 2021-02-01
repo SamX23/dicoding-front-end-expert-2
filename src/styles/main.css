@@ -333,3 +333,14 @@ footer {
   color: #dddddd;
   height: 50px;
 }
+
+.footer__credit {
+  padding: 14px 0;
+  text-decoration: none;
+  color: unset;
+}
+
+.footer__credit:hover {
+  border-radius: 5px;
+  background-color: rgb(247, 82, 90);
+}
