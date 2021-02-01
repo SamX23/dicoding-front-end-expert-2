@@ -37,12 +37,16 @@
   }
 
   .container__height {
-    margin: 10vh 0 0 0;
+    margin: 5vh 0;
   }
 
   .container__height > h2,
   .container__height > p {
     margin: 10px;
+  }
+
+  .favourite__header {
+    padding-top: 5vh;
   }
 
   .cards {

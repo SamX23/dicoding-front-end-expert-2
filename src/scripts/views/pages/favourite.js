@@ -4,8 +4,8 @@ import FavourieDishIdb from "../../data/object-db";
 const Favourite = {
   async render() {
     return `
-    <section class="main__header container__height">
-        <h2 >Your Favourite Dish</h2>
+    <section class="main__header container__height favourite__header">
+        <h2>Your Favourite Dish</h2>
         <p>
           We serve you the best suggestion for your belly, the best place you
           can get. All about delicous food discovered by masterpiece.
