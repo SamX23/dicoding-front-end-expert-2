@@ -67,6 +67,8 @@ body {
   display: none;
   font-size: 40px;
   color: #dddddd;
+  background-color: rgba(0, 0, 0, 0);
+  border: unset;
   padding: 5px;
 }
 
