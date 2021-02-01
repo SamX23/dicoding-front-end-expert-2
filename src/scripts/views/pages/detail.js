@@ -6,8 +6,10 @@ import LikeButton from "../../utils/like-button";
 const Details = {
   async render() {
     return `
-    <div id="dish__details" class="detail container__height"></div>
-    <div id="likeButtonContainer"></div>
+    <div class="container">
+      <div id="dish__details" class="detail container__height"></div>
+      <div id="likeButtonContainer"></div>
+    </div>
     `;
   },
 

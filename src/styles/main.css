@@ -160,7 +160,8 @@ header {
 
 /* Main */
 main {
-  max-width: 1200px;
+  text-align: center;
+  margin: auto;
 }
 
 .main__header {
@@ -308,9 +309,6 @@ main {
   padding: 25px;
   text-align: left;
   margin-left: 0 !important;
-}
-
-.info__categories {
 }
 
 .info__categories > h4 {
