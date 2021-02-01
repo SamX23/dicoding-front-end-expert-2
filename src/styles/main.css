@@ -287,6 +287,10 @@ main {
   margin-left: 10px !important;
 }
 
+.detail__info > div {
+  margin-top: 0.5em;
+}
+
 .detail__info > div > ul {
   padding: 5px;
   list-style-type: none;
@@ -304,6 +308,19 @@ main {
   padding: 25px;
   text-align: left;
   margin-left: 0 !important;
+}
+
+.info__categories {
+}
+
+.info__categories > h4 {
+  margin: 0.5em 0;
+}
+
+.info__categories > span {
+  padding: 5px;
+  color: white;
+  background-color: rgb(179, 68, 68);
 }
 
 /*
