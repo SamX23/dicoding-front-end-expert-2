@@ -83,3 +83,24 @@
    Menerapkan salah satu style guide baik itu Google JavaScript Code Style, AirBnB JavaScript Code Style, atau StandardJS Code Style.
 6. Pertahankan syarat yang ada pada submission sebelumnya. #CHECKED
    Seperti responsibilitas tampilan, dan aksesibilitas pada website.
+
+## Kriteria Submission Terakhir
+
+1. Integration Test
+   Syarat:
+   Menerapkan integration test untuk fungsi menyukai dan batal menyukai restoran.
+2. End to End Test
+   Syarat:
+   Menerapkan End to End Test dengan skenario:
+   Menyukai salah satu restoran.
+   Batal menyukai restoran tersebut.
+3. Image Optimization
+   Syarat:
+   Melakukan kompresi terhadap gambar hero yang digunakan. Ukuran gambar harus di bawah 200kb.
+   Menerapkan teknik image responsive pada gambar hero. Gambar pada layar seluler dan desktop harus berbeda.
+   Menerapkan teknik lazy loading pada gambar daftar restoran yang ditampilkan.
+4. Bundle Optimization
+   Syarat:
+   Memasang bundle analyzer pada proyek submission.
+   Gunakan teknik Code Splitting untuk memisahkan vendor code dari kode asli yang Anda tuliskan.
+5. Pertahankan syarat yang ada pada submission sebelumnya. Seperti penerapan PWA, responsibilitas tampilan, dan aksesibilitas pada website.
