@@ -12,7 +12,7 @@ const dbPromise = openDB(DATABASE_NAME, DATABASE_VERSION, {
   },
 });
 
-const FavourieDishIdb = {
+const FavouriteDishIdb = {
   async getDish(id) {
     return (await dbPromise).get(OBJECT_STORE_NAME, id);
   },
@@ -27,4 +27,4 @@ const FavourieDishIdb = {
   },
 };
 
-export default FavourieDishIdb;
+export default FavouriteDishIdb;

@@ -2,7 +2,7 @@ import {
   likeButtonTemplate,
   likedButtonTemplate,
 } from "../views/template/creator";
-import FavourieDishIdb from "../data/object-db";
+import FavouriteDishIdb from "../data/object-db";
 
 const LikeButton = {
   async init({ likeButtonContainer, dish }) {
@@ -22,7 +22,7 @@ const LikeButton = {
   },
 
   async _isDishExist(id) {
-    const dish = await FavourieDishIdb.getDish(id);
+    const dish = await FavouriteDishIdb.getDish(id);
     return !!dish;
   },
 
@@ -30,7 +30,7 @@ const LikeButton = {
     this._likeButtonContainer.innerHTML = likeButtonTemplate();
     const likeButton = document.getElementById("likeButton");
     likeButton.addEventListener("click", async () => {
-      await FavourieDishIdb.putDish(this._dish);
+      await FavouriteDishIdb.putDish(this._dish);
       this._renderButton();
     });
   },
@@ -39,7 +39,7 @@ const LikeButton = {
     this._likeButtonContainer.innerHTML = likedButtonTemplate();
     const likeButton = document.getElementById("likeButton");
     likeButton.addEventListener("click", async () => {
-      await FavourieDishIdb.deleteDish(this._dish.id);
+      await FavouriteDishIdb.deleteDish(this._dish.id);
       this._renderButton();
     });
   },

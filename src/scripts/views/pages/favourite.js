@@ -1,5 +1,5 @@
 import { Cards } from "../template/creator";
-import FavourieDishIdb from "../../data/object-db";
+import FavouriteDishIdb from "../../data/object-db";
 
 const Favourite = {
   async render() {
@@ -15,7 +15,7 @@ const Favourite = {
   },
 
   async afterRender() {
-    const favourite = await FavourieDishIdb.getAllDish();
+    const favourite = await FavouriteDishIdb.getAllDish();
     const favouriteContainer = document.getElementById("card");
     if (favourite && favourite.length > 0) {
       favourite.forEach((item) => {
