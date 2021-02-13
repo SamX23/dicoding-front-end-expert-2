@@ -1,7 +1,7 @@
 import LikeButton from "../src/scripts/utils/like-button";
+import FavouriteDishIdb from "../src/scripts/data/object-db";
 
 /*
-
 Scenario of liking a dish
 - Dish has not been liked
 - Like button shows
@@ -19,7 +19,6 @@ Scenario of dislike a dish
 - Unlike button clicked
 - Dish deleted from favorite list
   - There are no dish displayed
-
 */
 
 describe("Liking a food", () => {
@@ -51,13 +50,18 @@ describe("Liking a food", () => {
     ).toBeFalsy();
   });
 
-  // it("should add to favorite if like button clicked", async () => {
-  //   document.body.innerHTML = '<div id="likeButtonContainer"></div>';
-  //   await LikeButton.init({
-  //     likeButtonContainer: document.querySelector("#likeButtonContainer"),
-  //     dish: {
-  //       id: 1,
-  //     },
-  //   });
-  // });
+  it("should liked a dish when button clicked", async () => {
+    document.body.innerHTML = '<div id="likeButtonContainer"></div>';
+    await LikeButton.init({
+      likeButtonContainer: document.querySelector("#likeButtonContainer"),
+      dish: {
+        id: 1,
+      },
+    });
+
+    document.querySelector("#likeButton").dispatchEvent(new Event("click"));
+    const dish = await FavouriteDishIdb.getDish(1);
+
+    expect(dish).toEqual({ id: 1 });
+  });
 });
