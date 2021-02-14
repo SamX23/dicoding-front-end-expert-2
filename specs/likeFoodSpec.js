@@ -71,4 +71,20 @@ describe("Liking a food", () => {
 
     FavouriteDishIdb.deleteDish(1);
   });
+
+  it("should not add a dish again when its already liked", async () => {
+    await LikeButton.init({
+      likeButtonContainer: document.querySelector("#likeButtonContainer"),
+      dish: {
+        id: 1,
+      },
+    });
+
+    await FavouriteDishIdb.putDish({ id: 1 });
+    document.querySelector("#likeButton").dispatchEvent(new Event("click"));
+
+    expect(await FavouriteDishIdb.getAllDish()).toEqual([{ id: 1 }]);
+
+    FavouriteDishIdb.deleteDish(1);
+  });
 });
