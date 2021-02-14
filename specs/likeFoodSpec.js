@@ -22,8 +22,15 @@ Scenario of dislike a dish
 */
 
 describe("Liking a food", () => {
-  it("should show like button when food has not been liked before", async () => {
+  const addLikeButtonContainer = () => {
     document.body.innerHTML = '<div id="likeButtonContainer"></div>';
+  };
+
+  beforeEach(() => {
+    addLikeButtonContainer();
+  });
+
+  it("should show like button when food has not been liked before", async () => {
     await LikeButton.init({
       likeButtonContainer: document.querySelector("#likeButtonContainer"),
       dish: {
@@ -37,7 +44,6 @@ describe("Liking a food", () => {
   });
 
   it("should not show unlike button when food has not been liked before", async () => {
-    document.body.innerHTML = '<div id="likeButtonContainer"></div>';
     await LikeButton.init({
       likeButtonContainer: document.querySelector("#likeButtonContainer"),
       dish: {
@@ -50,8 +56,7 @@ describe("Liking a food", () => {
     ).toBeFalsy();
   });
 
-  it("should liked a dish when button clicked", async () => {
-    document.body.innerHTML = '<div id="likeButtonContainer"></div>';
+  it("should be able to like a dish when button clicked", async () => {
     await LikeButton.init({
       likeButtonContainer: document.querySelector("#likeButtonContainer"),
       dish: {
@@ -63,5 +68,7 @@ describe("Liking a food", () => {
     const dish = await FavouriteDishIdb.getDish(1);
 
     expect(dish).toEqual({ id: 1 });
+
+    FavouriteDishIdb.deleteDish(1);
   });
 });
