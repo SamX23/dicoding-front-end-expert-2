@@ -87,4 +87,15 @@ describe("Liking a food", () => {
 
     FavouriteDishIdb.deleteDish(1);
   });
+
+  xit("should not add a dish when it has no id", async () => {
+    await LikeButton.init({
+      likeButtonContainer: document.querySelector("#likeButtonContainer"),
+      dish: {},
+    });
+
+    document.querySelector("#likeButton").dispatchEvent(new Event("click"));
+
+    expect(await FavouriteDishIdb.getAllDish()).toEqual([]);
+  });
 });
