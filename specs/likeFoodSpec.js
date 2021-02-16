@@ -1,5 +1,5 @@
 import LikeButton from "../src/scripts/utils/like-button";
-import FavouriteDishIdb from "../src/scripts/data/object-db";
+import FavouriteDishIdb from "../src/scripts/data/fetch-db";
 
 /*
 Scenario of liking a dish

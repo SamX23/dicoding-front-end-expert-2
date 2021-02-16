@@ -2,7 +2,7 @@ import {
   likeButtonTemplate,
   likedButtonTemplate,
 } from "../views/template/creator";
-import FavouriteDishIdb from "../data/object-db";
+import FavouriteDishIdb from "../data/fetch-db";
 
 const LikeButton = {
   async init({ likeButtonContainer, dish }) {

@@ -1,5 +1,5 @@
 import { Cards } from "../template/creator";
-import FavouriteDishIdb from "../../data/object-db";
+import FavouriteDishIdb from "../../data/fetch-db";
 
 const Favourite = {
   async render() {
