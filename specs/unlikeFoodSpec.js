@@ -1,6 +1,15 @@
 import LikeButton from "../src/scripts/utils/like-button";
 import FavouriteDishIdb from "../src/scripts/data/fetch-db";
 
+/*
+Scenario of dislike a dish
+- Dish has been liked
+- Unlike button shows
+- Unlike button clicked
+- Dish deleted from favorite list
+  - There are no dish displayed
+*/
+
 const addLikeButtonContainer = () => {
   document.body.innerHTML = '<div id="likeButtonContainer"></div>';
 };
@@ -39,5 +48,37 @@ describe("Unliking A dish", () => {
     expect(
       document.querySelector('[aria-label="Favourite this dish"]')
     ).toBeFalsy();
+  });
+
+  it("should be able to remove liked movie from the list", async () => {
+    await LikeButton.init({
+      likeButtonContainer: document.querySelector("#likeButtonContainer"),
+      dish: {
+        id: 1,
+      },
+    });
+
+    document
+      .querySelector('[aria-label="Unfavourite this dish"]')
+      .dispatchEvent(new Event("click"));
+
+    expect(await FavouriteDishIdb.getAllDish()).toEqual([]);
+  });
+
+  it("should not throw error if the unliked movie is not in the list", async () => {
+    await LikeButton.init({
+      likeButtonContainer: document.querySelector("#likeButtonContainer"),
+      dish: {
+        id: 1,
+      },
+    });
+
+    await FavouriteDishIdb.deleteDish(1);
+
+    document
+      .querySelector('[aria-label="Unfavourite this dish"]')
+      .dispatchEvent(new Event("click"));
+
+    expect(await FavouriteDishIdb.getAllDish()).toEqual([]);
   });
 });
