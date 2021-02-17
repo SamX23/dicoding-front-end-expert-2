@@ -13,19 +13,13 @@ Scenario of liking a dish
     - No need to process
     - System not failed
 
-Scenario of dislike a dish
-- Dish has been liked
-- Unlike button shows
-- Unlike button clicked
-- Dish deleted from favorite list
-  - There are no dish displayed
 */
 
-describe("Liking a food", () => {
-  const addLikeButtonContainer = () => {
-    document.body.innerHTML = '<div id="likeButtonContainer"></div>';
-  };
+const addLikeButtonContainer = () => {
+  document.body.innerHTML = '<div id="likeButtonContainer"></div>';
+};
 
+describe("Liking a food", () => {
   beforeEach(() => {
     addLikeButtonContainer();
   });
@@ -88,7 +82,7 @@ describe("Liking a food", () => {
     FavouriteDishIdb.deleteDish(1);
   });
 
-  xit("should not add a dish when it has no id", async () => {
+  it("should not add a dish when it has no id", async () => {
     await LikeButton.init({
       likeButtonContainer: document.querySelector("#likeButtonContainer"),
       dish: {},
