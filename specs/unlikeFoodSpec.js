@@ -50,7 +50,7 @@ describe("Unliking A dish", () => {
     ).toBeFalsy();
   });
 
-  it("should be able to remove liked movie from the list", async () => {
+  it("should be able to remove liked dish from the list", async () => {
     await LikeButton.init({
       likeButtonContainer: document.querySelector("#likeButtonContainer"),
       dish: {
@@ -65,7 +65,7 @@ describe("Unliking A dish", () => {
     expect(await FavouriteDishIdb.getAllDish()).toEqual([]);
   });
 
-  it("should not throw error if the unliked movie is not in the list", async () => {
+  it("should not throw error if the unliked dish is not in the list", async () => {
     await LikeButton.init({
       likeButtonContainer: document.querySelector("#likeButtonContainer"),
       dish: {
