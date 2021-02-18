@@ -86,7 +86,7 @@
 
 ## Kriteria Submission Terakhir
 
-1. Integration Test
+1. Integration Test #checked
    Syarat:
    Menerapkan integration test untuk fungsi menyukai dan batal menyukai restoran.
 2. End to End Test
