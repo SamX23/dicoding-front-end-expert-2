@@ -1,6 +1,6 @@
 import {
-  likeButtonTemplate,
-  likedButtonTemplate,
+  createLikeDishButtonTemplate,
+  createUnlikeDishButtonTemplate,
 } from "../views/template/creator";
 import FavouriteDishIdb from "../data/fetch-db";
 
@@ -27,7 +27,7 @@ const LikeButtonPresenter = {
   },
 
   _renderLike() {
-    this._likeButtonContainer.innerHTML = likeButtonTemplate();
+    this._likeButtonContainer.innerHTML = createLikeDishButtonTemplate();
     const likeButton = document.getElementById("likeButton");
     likeButton.addEventListener("click", async () => {
       await FavouriteDishIdb.putDish(this._dish);
@@ -36,7 +36,7 @@ const LikeButtonPresenter = {
   },
 
   _renderLiked() {
-    this._likeButtonContainer.innerHTML = likedButtonTemplate();
+    this._likeButtonContainer.innerHTML = createUnlikeDishButtonTemplate();
     const likeButton = document.getElementById("likeButton");
     likeButton.addEventListener("click", async () => {
       await FavouriteDishIdb.deleteDish(this._dish.id);

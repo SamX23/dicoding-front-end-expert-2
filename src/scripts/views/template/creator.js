@@ -65,17 +65,22 @@ const DetailedItems = (data) => `
   </div>
 `;
 
-const likeButtonTemplate = () => `
+const createLikeDishButtonTemplate = () => `
   <button aria-label="Favourite this dish" id="likeButton" class="like">
     <i class="fa fa-heart-o" aria-hidden="true"></i>
   </button>
 `;
 
-const likedButtonTemplate = () => `
+const createUnlikeDishButtonTemplate = () => `
   <button aria-label="Unfavourite this dish" id="likeButton" class="like">
     <i class="fa fa-heart" aria-hidden="true"></i>
   </button>
 `;
 
 // eslint-disable-next-line object-curly-newline
-export { DetailedItems, Cards, likeButtonTemplate, likedButtonTemplate };
+export {
+  DetailedItems,
+  Cards,
+  createLikeDishButtonTemplate,
+  createUnlikeDishButtonTemplate,
+};
