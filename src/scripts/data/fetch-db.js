@@ -21,7 +21,7 @@ const FavouriteDishIdb = {
     return (await dbPromise).getAll(OBJECT_STORE_NAME);
   },
   async putDish(dish) {
-    if (!dish.hasOwnProperty("id")) return null;
+    if (!Object.prototype.hasOwnProperty.call(dish, "id")) return null;
 
     return (await dbPromise).put(OBJECT_STORE_NAME, dish);
   },
