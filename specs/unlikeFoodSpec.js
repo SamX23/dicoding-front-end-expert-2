@@ -1,5 +1,5 @@
-import LikeButton from "../src/scripts/utils/like-button";
 import FavouriteDishIdb from "../src/scripts/data/fetch-db";
+import * as TestFactories from "./helpers/testFactories";
 
 /*
 Scenario of dislike a dish
@@ -25,12 +25,7 @@ describe("Unliking A dish", () => {
   });
 
   it("should display unlike widget when the dish has been liked", async () => {
-    await LikeButton.init({
-      likeButtonContainer: document.querySelector("#likeButtonContainer"),
-      dish: {
-        id: 1,
-      },
-    });
+    await TestFactories.likeButtonPresenterWithDish({ id: 1 });
 
     expect(
       document.querySelector('[aria-label="Unfavourite this dish"]')
@@ -38,12 +33,7 @@ describe("Unliking A dish", () => {
   });
 
   it("should not display like widget when the dish has been liked", async () => {
-    await LikeButton.init({
-      likeButtonContainer: document.querySelector("#likeButtonContainer"),
-      dish: {
-        id: 1,
-      },
-    });
+    await TestFactories.likeButtonPresenterWithDish({ id: 1 });
 
     expect(
       document.querySelector('[aria-label="Favourite this dish"]')
@@ -51,12 +41,7 @@ describe("Unliking A dish", () => {
   });
 
   it("should be able to remove liked dish from the list", async () => {
-    await LikeButton.init({
-      likeButtonContainer: document.querySelector("#likeButtonContainer"),
-      dish: {
-        id: 1,
-      },
-    });
+    await TestFactories.likeButtonPresenterWithDish({ id: 1 });
 
     document
       .querySelector('[aria-label="Unfavourite this dish"]')
@@ -66,12 +51,7 @@ describe("Unliking A dish", () => {
   });
 
   it("should not throw error if the unliked dish is not in the list", async () => {
-    await LikeButton.init({
-      likeButtonContainer: document.querySelector("#likeButtonContainer"),
-      dish: {
-        id: 1,
-      },
-    });
+    await TestFactories.likeButtonPresenterWithDish({ id: 1 });
 
     await FavouriteDishIdb.deleteDish(1);
 

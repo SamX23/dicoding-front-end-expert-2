@@ -4,7 +4,7 @@ import {
 } from "../views/template/creator";
 import FavouriteDishIdb from "../data/fetch-db";
 
-const LikeButton = {
+const LikeButtonPresenter = {
   async init({ likeButtonContainer, dish }) {
     this._likeButtonContainer = likeButtonContainer;
     this._dish = dish;
@@ -45,4 +45,4 @@ const LikeButton = {
   },
 };
 
-export default LikeButton;
+export default LikeButtonPresenter;

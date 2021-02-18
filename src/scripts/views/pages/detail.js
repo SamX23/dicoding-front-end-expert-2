@@ -1,7 +1,7 @@
 import UrlParser from "../../routes/url-parser";
 import Source from "../../data/source";
 import { DetailedItems } from "../template/creator";
-import LikeButton from "../../utils/like-button";
+import LikeButtonPresenter from "../../utils/like-button-presenter";
 
 const Details = {
   async render() {
@@ -19,7 +19,7 @@ const Details = {
     const detailContainer = document.getElementById("dish__details");
     detailContainer.innerHTML = DetailedItems(items.restaurant);
 
-    LikeButton.init({
+    LikeButtonPresenter.init({
       likeButtonContainer: document.getElementById("likeButtonContainer"),
       dish: {
         id: items.restaurant.id,
