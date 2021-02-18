@@ -14,19 +14,14 @@ const dbPromise = openDB(DATABASE_NAME, DATABASE_VERSION, {
 
 const FavouriteDishIdb = {
   async getDish(id) {
-    if (!id) {
-      return;
-    }
-
+    if (!id) return null;
     return (await dbPromise).get(OBJECT_STORE_NAME, id);
   },
   async getAllDish() {
     return (await dbPromise).getAll(OBJECT_STORE_NAME);
   },
   async putDish(dish) {
-    if (!dish.hasOwnProperty("id")) {
-      return;
-    }
+    if (!dish.hasOwnProperty("id")) return null;
 
     return (await dbPromise).put(OBJECT_STORE_NAME, dish);
   },
