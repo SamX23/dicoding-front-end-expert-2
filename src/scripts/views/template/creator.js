@@ -66,7 +66,7 @@ const DetailedItems = (data) => `
 `;
 
 const createLikeDishButtonTemplate = () => `
-  <button aria-label="Favourite this dish" id="likeButton" class="like">
+  <button aria-label="Favorite this dish" id="likeButton" class="like">
     <i class="fa fa-heart-o" aria-hidden="true"></i>
   </button>
 `;

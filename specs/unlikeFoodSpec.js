@@ -36,7 +36,7 @@ describe("Unliking A dish", () => {
     await TestFactories.likeButtonPresenterWithDish({ id: 1 });
 
     expect(
-      document.querySelector('[aria-label="Favourite this dish"]')
+      document.querySelector('[aria-label="Favorite this dish"]')
     ).toBeFalsy();
   });
 
