@@ -2,12 +2,13 @@ import {
   createLikeDishButtonTemplate,
   createUnlikeDishButtonTemplate,
 } from "../views/template/creator";
-import FavouriteDishIdb from "../data/fetch-db";
 
 const LikeButtonPresenter = {
-  async init({ likeButtonContainer, dish }) {
+  async init({ likeButtonContainer, favoriteDish: FavouriteDish, dish }) {
     this._likeButtonContainer = likeButtonContainer;
     this._dish = dish;
+    this._favoriteDish = FavouriteDish;
+
     await this._renderButton();
   },
 
@@ -22,7 +23,7 @@ const LikeButtonPresenter = {
   },
 
   async _isDishExist(id) {
-    const dish = await FavouriteDishIdb.getDish(id);
+    const dish = await this._favoriteDish.getDish(id);
     return !!dish;
   },
 
@@ -30,7 +31,7 @@ const LikeButtonPresenter = {
     this._likeButtonContainer.innerHTML = createLikeDishButtonTemplate();
     const likeButton = document.getElementById("likeButton");
     likeButton.addEventListener("click", async () => {
-      await FavouriteDishIdb.putDish(this._dish);
+      await this._favoriteDish.putDish(this._dish);
       this._renderButton();
     });
   },
@@ -39,7 +40,7 @@ const LikeButtonPresenter = {
     this._likeButtonContainer.innerHTML = createUnlikeDishButtonTemplate();
     const likeButton = document.getElementById("likeButton");
     likeButton.addEventListener("click", async () => {
-      await FavouriteDishIdb.deleteDish(this._dish.id);
+      await this._favoriteDish.deleteDish(this._dish.id);
       this._renderButton();
     });
   },
