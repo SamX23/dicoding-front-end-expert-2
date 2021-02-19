@@ -15,7 +15,7 @@ const Cards = (data) =>
     </a>
   </div>`;
 
-const DetailedItems = (data) => `
+const createDishItemTemplate = (data) => `
   <div class="detail__header">
     <img class="detail__poster" src=${ENDPOINT.IMG.M}${data.pictureId} alt=${
   data.name
@@ -79,7 +79,7 @@ const createUnlikeDishButtonTemplate = () => `
 
 // eslint-disable-next-line object-curly-newline
 export {
-  DetailedItems,
+  createDishItemTemplate,
   Cards,
   createLikeDishButtonTemplate,
   createUnlikeDishButtonTemplate,
