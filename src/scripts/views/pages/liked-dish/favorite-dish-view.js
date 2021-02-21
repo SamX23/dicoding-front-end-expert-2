@@ -21,6 +21,7 @@ class FavoriteDishView {
         ""
       );
     } else {
+      document.getElementById("card").style.display = "block";
       html = this._getEmptyDishTemplate();
     }
 
@@ -29,7 +30,7 @@ class FavoriteDishView {
   }
 
   _getEmptyDishTemplate() {
-    return '<div class="dish-item__not__found">Tidak ada makanan untuk ditampilkan</div>';
+    return `<div id="no_result">Shows no result</div>`;
   }
 }
 

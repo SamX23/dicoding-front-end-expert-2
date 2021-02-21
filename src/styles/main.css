@@ -343,6 +343,12 @@ main {
   justify-content: center;
 }
 
+#no_result {
+  display: block !important;
+  margin: 40vh 50px;
+  text-align: center;
+}
+
 /* Footer */
 footer {
   display: grid;
