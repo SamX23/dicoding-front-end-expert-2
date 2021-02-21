@@ -12,7 +12,7 @@ class FavoriteDishShowPresenter {
   }
 
   _displayDish(dish) {
-    this._view._showFavoriteDish(dish);
+    this._view.showFavoriteDish(dish);
   }
 }
 
