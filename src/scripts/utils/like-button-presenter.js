@@ -4,10 +4,10 @@ import {
 } from "../views/template/creator";
 
 const LikeButtonPresenter = {
-  async init({ likeButtonContainer, favoriteDish: FavouriteDish, dish }) {
+  async init({ likeButtonContainer, favoriteDish: FavoriteDishIdb, dish }) {
     this._likeButtonContainer = likeButtonContainer;
     this._dish = dish;
-    this._favoriteDish = FavouriteDish;
+    this._favoriteDish = FavoriteDishIdb;
 
     await this._renderButton();
   },
