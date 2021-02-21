@@ -1,4 +1,4 @@
-import FavoriteDishIdb from "../src/scripts/data/fetch-db";
+import FavoriteDish from "../src/scripts/data/fetch-db";
 import * as TestFactories from "./helpers/testFactories";
 
 /*
@@ -17,11 +17,11 @@ const addLikeButtonContainer = () => {
 describe("Unliking A dish", () => {
   beforeEach(async () => {
     addLikeButtonContainer();
-    await FavoriteDishIdb.putDish({ id: 1 });
+    await FavoriteDish.putDish({ id: 1 });
   });
 
   afterEach(async () => {
-    await FavoriteDishIdb.deleteDish(1);
+    await FavoriteDish.deleteDish(1);
   });
 
   it("should display unlike widget when the dish has been liked", async () => {
@@ -47,18 +47,18 @@ describe("Unliking A dish", () => {
       .querySelector('[aria-label="Unfavourite this dish"]')
       .dispatchEvent(new Event("click"));
 
-    expect(await FavoriteDishIdb.getAllDish()).toEqual([]);
+    expect(await FavoriteDish.getAllDish()).toEqual([]);
   });
 
   it("should not throw error if the unliked dish is not in the list", async () => {
     await TestFactories.likeButtonPresenterWithDish({ id: 1 });
 
-    await FavoriteDishIdb.deleteDish(1);
+    await FavoriteDish.deleteDish(1);
 
     document
       .querySelector('[aria-label="Unfavourite this dish"]')
       .dispatchEvent(new Event("click"));
 
-    expect(await FavoriteDishIdb.getAllDish()).toEqual([]);
+    expect(await FavoriteDish.getAllDish()).toEqual([]);
   });
 });

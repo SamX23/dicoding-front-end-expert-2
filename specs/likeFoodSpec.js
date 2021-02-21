@@ -1,24 +1,11 @@
-import FavoriteDishIdb from "../src/scripts/data/fetch-db";
+import FavoriteDish from "../src/scripts/data/fetch-db";
 import * as TestFactories from "./helpers/testFactories";
 
-/*
-Scenario of liking a dish
-- Dish has not been liked
-- Like button shows
-- Like button clicked
-- Dish added to the favorite list
-  - If dish has been liked
-    - No need to be added
-  - If dish has no id
-    - No need to process
-    - System not failed
-*/
-
-const addLikeButtonContainer = () => {
-  document.body.innerHTML = '<div id="likeButtonContainer"></div>';
-};
-
 describe("Liking a food", () => {
+  const addLikeButtonContainer = () => {
+    document.body.innerHTML = '<div id="likeButtonContainer"></div>';
+  };
+
   beforeEach(() => {
     addLikeButtonContainer();
   });
@@ -43,22 +30,22 @@ describe("Liking a food", () => {
     await TestFactories.likeButtonPresenterWithDish({ id: 1 });
 
     document.querySelector("#likeButton").dispatchEvent(new Event("click"));
-    const dish = await FavoriteDishIdb.getDish(1);
+    const dish = await FavoriteDish.getDish(1);
 
     expect(dish).toEqual({ id: 1 });
 
-    FavoriteDishIdb.deleteDish(1);
+    FavoriteDish.deleteDish(1);
   });
 
   it("should not add a dish again when its already liked", async () => {
     await TestFactories.likeButtonPresenterWithDish({ id: 1 });
 
-    await FavoriteDishIdb.putDish({ id: 1 });
+    await FavoriteDish.putDish({ id: 1 });
     document.querySelector("#likeButton").dispatchEvent(new Event("click"));
 
-    expect(await FavoriteDishIdb.getAllDish()).toEqual([{ id: 1 }]);
+    expect(await FavoriteDish.getAllDish()).toEqual([{ id: 1 }]);
 
-    FavoriteDishIdb.deleteDish(1);
+    FavoriteDish.deleteDish(1);
   });
 
   it("should not add a dish when it has no id", async () => {
@@ -66,6 +53,6 @@ describe("Liking a food", () => {
 
     document.querySelector("#likeButton").dispatchEvent(new Event("click"));
 
-    expect(await FavoriteDishIdb.getAllDish()).toEqual([]);
+    expect(await FavoriteDish.getAllDish()).toEqual([]);
   });
 });
