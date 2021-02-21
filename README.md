@@ -89,7 +89,7 @@
 1. Integration Test #checked
    Syarat:
    Menerapkan integration test untuk fungsi menyukai dan batal menyukai restoran.
-2. End to End Test
+2. End to End Test #checked
    Syarat:
    Menerapkan End to End Test dengan skenario:
    Menyukai salah satu restoran.
