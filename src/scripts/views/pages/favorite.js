@@ -1,5 +1,4 @@
-import { Cards } from "../template/creator";
-import FavouriteDishIdb from "../../data/fetch-db";
+import FavoriteDishIdb from "../../data/fetch-db";
 import FavoriteDishView from "./liked-dish/favorite-dish-view";
 import FavoriteDishShowPresenter from "./liked-dish/favorite-dish-show-presenter";
 
@@ -11,12 +10,12 @@ const Favorite = {
   },
 
   async afterRender() {
-    new FavoriteDishShowPresenter({ view, favoriteDish: FavouriteDishIdb });
-    // const favorite = await FavouriteDishIdb.getAllDish();
+    new FavoriteDishShowPresenter({ view, favoriteDish: FavoriteDishIdb });
+    // const favorite = await FavoriteDishIdb.getAllDish();
     // const favouriteContainer = document.getElementById("card");
     // if (favorite && favorite.length > 0) {
     //   favorite.forEach((item) => {
-    //     favouriteContainer.innerHTML += Cards(item);
+    //     favouriteContainer.innerHTML += createDishItemTemplate(item);
     //   });
     // }
   },

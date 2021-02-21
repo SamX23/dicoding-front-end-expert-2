@@ -1,6 +1,6 @@
 import ENDPOINT from "../../globals/api-endpoints";
 
-const Cards = (data) =>
+const createDishItemTemplate = (data) =>
   `<div id=${data.id} class='card__item'>
     <a href="${`/#/detail/${data.id}`}">
       <div class='card__image'>
@@ -15,7 +15,7 @@ const Cards = (data) =>
     </a>
   </div>`;
 
-const createDishItemTemplate = (data) => `
+const createDishDetailTemplate = (data) => `
   <div class="detail__header">
     <img class="detail__poster" src=${ENDPOINT.IMG.M}${data.pictureId} alt=${
   data.name
@@ -79,8 +79,8 @@ const createUnlikeDishButtonTemplate = () => `
 
 // eslint-disable-next-line object-curly-newline
 export {
+  createDishDetailTemplate,
   createDishItemTemplate,
-  Cards,
   createLikeDishButtonTemplate,
   createUnlikeDishButtonTemplate,
 };

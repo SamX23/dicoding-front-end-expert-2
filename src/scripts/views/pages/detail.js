@@ -1,8 +1,8 @@
 import UrlParser from "../../routes/url-parser";
 import Source from "../../data/source";
-import { createDishItemTemplate } from "../template/creator";
+import { createDishDetailTemplate } from "../template/creator";
 import LikeButtonPresenter from "../../utils/like-button-presenter";
-import FavouriteDishIdb from "../../data/fetch-db";
+import FavoriteDishIdb from "../../data/fetch-db";
 
 const Details = {
   async render() {
@@ -18,11 +18,11 @@ const Details = {
     const url = UrlParser.parseActiveUrlWithoutCombiner();
     const items = await Source.Details(url.id);
     const detailContainer = document.getElementById("dish__details");
-    detailContainer.innerHTML = createDishItemTemplate(items.restaurant);
+    detailContainer.innerHTML = createDishDetailTemplate(items.restaurant);
 
     LikeButtonPresenter.init({
       likeButtonContainer: document.getElementById("likeButtonContainer"),
-      favoriteDish: FavouriteDishIdb,
+      favoriteDish: FavoriteDishIdb,
       dish: {
         id: items.restaurant.id,
         name: items.restaurant.name,
