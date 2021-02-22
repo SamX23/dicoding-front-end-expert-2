@@ -22,7 +22,6 @@ const Home = {
       </section>
       <section id="card" class="cards "></section>
     </div>
-    
     `;
   },
 

@@ -77,7 +77,6 @@ const createUnlikeDishButtonTemplate = () => `
   </button>
 `;
 
-// eslint-disable-next-line object-curly-newline
 export {
   createDishDetailTemplate,
   createDishItemTemplate,
