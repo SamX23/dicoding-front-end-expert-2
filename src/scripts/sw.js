@@ -1,4 +1,3 @@
-import "regenerator-runtime";
 import CacheHelper from "./utils/cache-helper";
 
 const { assets } = global.serviceWorkerOption;

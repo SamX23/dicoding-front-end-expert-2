@@ -1,4 +1,3 @@
-import "regenerator-runtime";
 import App from "./views/app";
 import RegisterSW from "./utils/sw-register";
 import "../styles/main.css";
