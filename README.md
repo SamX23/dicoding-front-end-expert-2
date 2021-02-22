@@ -94,7 +94,7 @@
    Menerapkan End to End Test dengan skenario:
    Menyukai salah satu restoran.
    Batal menyukai restoran tersebut.
-3. Image Optimization
+3. Image Optimization #skip
    Syarat:
    Melakukan kompresi terhadap gambar hero yang digunakan. Ukuran gambar harus di bawah 200kb.
    Menerapkan teknik image responsive pada gambar hero. Gambar pada layar seluler dan desktop harus berbeda.
