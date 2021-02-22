@@ -17,19 +17,20 @@ const Details = {
   async afterRender() {
     const url = UrlParser.parseActiveUrlWithoutCombiner();
     const items = await Source.Details(url.id);
+    const { restaurant } = items;
     const detailContainer = document.getElementById("dish__details");
-    detailContainer.innerHTML = createDishDetailTemplate(items.restaurant);
+    detailContainer.innerHTML = createDishDetailTemplate(restaurant);
 
     LikeButtonPresenter.init({
       likeButtonContainer: document.getElementById("likeButtonContainer"),
       favoriteDish: FavoriteDish,
       dish: {
-        id: items.restaurant.id,
-        name: items.restaurant.name,
-        city: items.restaurant.city,
-        rating: items.restaurant.rating,
-        description: items.restaurant.description,
-        pictureId: items.restaurant.pictureId,
+        id: restaurant.id,
+        name: restaurant.name,
+        city: restaurant.city,
+        rating: restaurant.rating,
+        description: restaurant.description,
+        pictureId: restaurant.pictureId,
       },
     });
   },
