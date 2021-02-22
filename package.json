@@ -7,8 +7,7 @@
     "start": "webpack-dev-server --config webpack.dev.js",
     "build": "webpack --config webpack.prod.js && node sharp.js",
     "test": "karma start",
-    "e2e": "codeceptjs run --steps",
-    "go": "npm run build && npm run build-image && npm run start"
+    "e2e": "codeceptjs run --steps"
   },
   "keywords": [],
   "author": "Sami Kalammallah <skalexsong@gmail.com>",
@@ -17,6 +16,7 @@
     "@babel/core": "^7.10.5",
     "@babel/preset-env": "^7.10.4",
     "babel-loader": "^8.1.0",
+    "clean-webpack-plugin": "^3.0.0",
     "codeceptjs": "^3.0.5",
     "copy-webpack-plugin": "^6.0.3",
     "css-loader": "^3.6.0",
@@ -38,6 +38,7 @@
     "sharp": "^0.27.1",
     "style-loader": "^1.2.1",
     "webpack": "^4.43.0",
+    "webpack-bundle-analyzer": "^4.4.0",
     "webpack-cli": "^3.3.12",
     "webpack-dev-server": "^3.11.0",
     "webpack-merge": "^5.0.9",
