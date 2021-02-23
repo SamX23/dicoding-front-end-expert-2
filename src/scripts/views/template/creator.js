@@ -23,7 +23,7 @@ const createDishDetailTemplate = (data) => `
     <h2 class="detail__title">${data.name.toUpperCase()}</h2>
   </div>
   <div class="detail__info">
-    <h4>INFORMATION</h4>
+    <h3>INFORMATION</h3>
     <p>City : ${data.city}</p>
     <p>Address : ${data.address}</p>
     <p>Rating : ${data.rating}⭐️</p>
@@ -58,7 +58,7 @@ const createDishDetailTemplate = (data) => `
     <p>${data.description}</p>
   </div>
   <div class="detail__reviews">
-    <h4>Reviews</h4>
+    <h3>Reviews</h3>
     <p>Oleh ${data.customerReviews[0].name} : </p>
     <p>${data.customerReviews[0].review}</p>
     <p>Pada ${data.customerReviews[0].date}</p>
