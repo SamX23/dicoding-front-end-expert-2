@@ -4,7 +4,9 @@ const createDishItemTemplate = (data) =>
   `<div id=${data.id} class='card__item'>
     <a href="${`/#/detail/${data.id}`}">
       <div class='card__image'>
-        <img src=${ENDPOINT.IMG.M}${data.pictureId} alt=${data.name} />
+        <img class ="lazyload" data-src=${ENDPOINT.IMG.M}${
+    data.pictureId
+  } alt=${data.name} />
         <span class='card__imageLeft'>${data.city}</span>
         <span class='card__imageRight'>${data.rating}</span>
       </div>
@@ -17,9 +19,9 @@ const createDishItemTemplate = (data) =>
 
 const createDishDetailTemplate = (data) => `
   <div class="detail__header">
-    <img class="detail__poster" src=${ENDPOINT.IMG.M}${data.pictureId} alt=${
-  data.name
-}/>
+    <img class="detail__poster lazyload" data-src=${ENDPOINT.IMG.M}${
+  data.pictureId
+} alt=${data.name}/>
     <h2 class="detail__title">${data.name.toUpperCase()}</h2>
   </div>
   <div class="detail__info">
