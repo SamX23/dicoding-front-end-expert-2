@@ -6,7 +6,10 @@ const Home = {
     return `
     <header>
         <div class="hero">
-          <div class="hero__img"></div>
+          <picture>
+            <source media="(max-width: 600px)" srcset="/images/hero-image-small.jpg">
+            <img class="hero__img lazyload" data-src="/images/hero-image-large.jpg" alt="hero images"/>
+          </picture>
           <div class="hero__text">
             <h1 class="hero__heading">DELICIOUS DISH</h1>
           </div>
