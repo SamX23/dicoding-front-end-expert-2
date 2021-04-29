@@ -5,9 +5,9 @@ const createDishItemTemplate = (data) =>
     <a href="${`/#/detail/${data.id}`}">
       <div class='card__image'>
       <picture>
-      <source type="image/webp" srcset=${ENDPOINT.IMG.M}${data.pictureId}/>
-      <source type="image/jpeg" srcset=${ENDPOINT.IMG.M}${data.pictureId}/>
-      <img class ="lazyload" data-src=${ENDPOINT.IMG.M}${data.pictureId} alt=${
+      <source type="image/webp" srcset=${ENDPOINT.IMG.S}${data.pictureId}/>
+      <source type="image/jpeg" srcset=${ENDPOINT.IMG.S}${data.pictureId}/>
+      <img class ="lazyload" data-src=${ENDPOINT.IMG.S}${data.pictureId} alt=${
     data.name
   } />
       </picture>
@@ -26,6 +26,9 @@ const createDishDetailTemplate = (data) => `
     <picture>
       <source type="image/webp" srcset=${ENDPOINT.IMG.M}${data.pictureId}/>
       <source type="image/jpeg" srcset=${ENDPOINT.IMG.M}${data.pictureId}/>
+      <source media="(max-width: 600px)" srcset=${ENDPOINT.IMG.S}${
+  data.pictureId
+}>
       <img class="detail__poster lazyload" data-src=${ENDPOINT.IMG.M}${
   data.pictureId
 } alt=${data.name}/>
