@@ -1,15 +1,24 @@
 /* Pallete https://colorhunt.co/palette/225760 */
 @import url("https://fonts.googleapis.com/css2?family=Monoton&family=Passion+One&display=swap");
+
+:root {
+  --primary: rgba(221, 221, 221, 1);
+  --secondary: rgba(34, 40, 49, 1);
+  --pink: rgba(240, 84, 84, 1);
+  --red: rgba(191, 23, 34, 1);
+}
+
 * {
   box-sizing: border-box;
   margin: 0;
   padding: 0;
+  scroll-behavior: smooth;
 }
 
 body {
   width: 100%;
   height: 100%;
-  background-color: #dddddd;
+  background-color: var(--primary);
   font-family: sans-serif;
 }
 
@@ -23,7 +32,7 @@ body {
   position: absolute;
   top: -40px;
   left: 0;
-  background-color: #bf1722;
+  background-color: var(--red);
   color: white;
   padding: 8px;
   z-index: 100;
@@ -60,13 +69,13 @@ body {
 
 #drawer a {
   text-decoration: none;
-  color: #dddddd;
+  color: var(--primary);
 }
 
 #hamburger {
   display: none;
   font-size: 40px;
-  color: #dddddd;
+  color: var(--primary);
   background-color: rgba(0, 0, 0, 0);
   border: unset;
   padding: 5px;
@@ -77,7 +86,7 @@ body {
   position: fixed;
   top: 0;
   width: 100%;
-  background-color: #222831;
+  background-color: var(--secondary);
   z-index: 5;
 }
 
@@ -86,11 +95,11 @@ body {
   grid-template-columns: 1fr 1fr;
   min-height: 60px;
   height: auto;
-  color: #dddddd;
+  color: var(--primary);
 }
 
 .nav__bar a {
-  color: #dddddd;
+  color: var(--primary);
   text-decoration: none;
 }
 
@@ -102,7 +111,7 @@ body {
 .nav__home > a {
   letter-spacing: 10px;
   font-size: xx-large;
-  color: #f05454;
+  color: var(--pink);
 }
 
 .nav__menu {
@@ -156,10 +165,10 @@ header {
 }
 
 .hero__heading {
-  color: #f05454;
+  color: var(--pink);
   font-weight: 800;
   letter-spacing: 5px;
-  text-shadow: 5px 5px #222831;
+  text-shadow: 5px 5px var(--secondary);
 }
 
 /* Main */
@@ -175,7 +184,7 @@ main {
 .main__header > h2 {
   font-size: xx-large;
   padding-bottom: 10px;
-  border-bottom: #222831 5px dashed;
+  border-bottom: var(--secondary) 5px dashed;
 }
 
 .main__header > p {
@@ -354,8 +363,8 @@ main {
 /* Footer */
 footer {
   display: grid;
-  background-color: #222831;
-  color: #dddddd;
+  background-color: var(--secondary);
+  color: var(--primary);
   height: 50px;
 }
 
@@ -368,4 +377,40 @@ footer {
 .footer__credit:hover {
   border-radius: 5px;
   background-color: rgb(247, 82, 90);
+}
+
+/* Animation */
+#scrollTopButton {
+  display: none;
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  z-index: 99;
+  border: none;
+  outline: none;
+  background-color: var(--secondary);
+  color: var(--pink);
+  cursor: pointer;
+  padding: 15px;
+  border-radius: 10px;
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+#scrollTopButton:hover {
+  background-color: #555;
+}
+
+::-webkit-scrollbar-track {
+  box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+  background-color: #ffffff;
+}
+
+::-webkit-scrollbar {
+  width: 1em;
+  background-color: #f5f5f5;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: var(--pink);
 }
