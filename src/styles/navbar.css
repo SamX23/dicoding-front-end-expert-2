@@ -1,0 +1,90 @@
+/* Drawer */
+#drawer {
+  min-width: 13rem;
+  height: 100%;
+  position: absolute;
+  transform: translate(-250px, 0);
+  z-index: 2;
+  transition: transform 0.3s ease-in-out;
+  background-color: #111;
+  padding-top: 55px;
+}
+
+#drawer.open {
+  transform: translate(0, 0);
+}
+
+#drawer > ul {
+  margin-top: 20px;
+}
+
+#drawer li {
+  padding: 8px 15px;
+  font-size: 2rem;
+}
+
+#drawer a {
+  text-decoration: none;
+  color: var(--primary);
+}
+
+#hamburger {
+  display: none;
+  font-size: 40px;
+  color: var(--primary);
+  background-color: rgba(0, 0, 0, 0);
+  border: unset;
+  padding: 5px;
+}
+
+/* Navbar */
+#navbar {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  background-color: var(--secondary);
+  z-index: 5;
+}
+
+.nav__bar {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  min-height: 60px;
+  height: auto;
+  color: var(--primary);
+}
+
+.nav__bar a {
+  color: var(--primary);
+  text-decoration: none;
+}
+
+.nav__home {
+  margin: auto auto auto 65px;
+  font-family: "Monoton", cursive;
+}
+
+.nav__home > a {
+  letter-spacing: 10px;
+  font-size: xx-large;
+  color: var(--pink);
+}
+
+.nav__menu {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  list-style: none;
+}
+.nav__menu > li {
+  width: 100%;
+  margin: auto;
+}
+
+.nav__menu > li > a {
+  display: block;
+  width: 100%;
+  font-family: "Passion One", cursive;
+  padding: 15px;
+  letter-spacing: 2px;
+}
