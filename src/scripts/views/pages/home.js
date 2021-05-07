@@ -1,5 +1,6 @@
 import { createDishItemTemplate } from "../template/creator";
 import Source from "../../data/source";
+import scrollTop from "../template/scrollTop";
 
 const Home = {
   async render() {
@@ -25,6 +26,7 @@ const Home = {
       </section>
       <section id="card" class="cards "></section>
     </div>
+    <button aria-label="scroll to top" id="scrollTopButton">TOP</button>
     `;
   },
 
@@ -36,6 +38,7 @@ const Home = {
         dishContainer.innerHTML += createDishItemTemplate(item);
       });
     }
+    scrollTop();
   },
 };
 
