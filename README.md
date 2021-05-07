@@ -2,8 +2,8 @@
 
 ## Submission dicoding front end expert
 
-- npm start
-- npm build
+- npm run build
+- npm run start
 
 ## Kriteria Submission I
 
@@ -66,21 +66,25 @@
    Rating
    Customer Reviews
    Terdapat tombol favorite untuk memasukkan atau menghapus restoran favorit dari database (gunakan IndexedDB).
+
 3. Halaman Daftar Restoran Favorit #CHECKED
    Syarat:
    Halaman Daftar Restoran dapat diakses melalui menu navigasi favorit.
    Menampilkan restoran yang difavoritkan oleh pengguna (data diambil dari indexedDB).
    Minimal menampilkan gambar, kota, rating, dan deskripsi (bisa diberi maksimal teks) dari restoran.
    Terdapat tautan/CTA yang mengarah ke detail restoran pada tiap itemnya.
+
 4. Native Capability #CHECKED
    Syarat:
    Aplikasi dapat diakses dalam keadaan offline tanpa ada aset yang gagal dimuat, termasuk data yang didapatkan dari API. Anda bebas menggunakan strategi caching apapun, bahkan menggunakan workbox.
    Aplikasi harus menampilkan icon Add to Home Screen.
    Aplikasi memiliki custom icon yang ditampilkan pada home screen dan splash screen.
+
 5. Code Quality #CHECKED
    Syarat:
    Menggunakan ESLint sebagai linter ketika menuliskan kode JavaScript. Harap lampirkan berkas konfigurasi ESLint ya.
    Menerapkan salah satu style guide baik itu Google JavaScript Code Style, AirBnB JavaScript Code Style, atau StandardJS Code Style.
+
 6. Pertahankan syarat yang ada pada submission sebelumnya. #CHECKED
    Seperti responsibilitas tampilan, dan aksesibilitas pada website.
 
@@ -89,18 +93,22 @@
 1. Integration Test #checked
    Syarat:
    Menerapkan integration test untuk fungsi menyukai dan batal menyukai restoran.
+
 2. End to End Test #checked
    Syarat:
    Menerapkan End to End Test dengan skenario:
    Menyukai salah satu restoran.
    Batal menyukai restoran tersebut.
-3. Image Optimization #skip
+
+3. Image Optimization #checked
    Syarat:
    Melakukan kompresi terhadap gambar hero yang digunakan. Ukuran gambar harus di bawah 200kb.
    Menerapkan teknik image responsive pada gambar hero. Gambar pada layar seluler dan desktop harus berbeda.
    Menerapkan teknik lazy loading pada gambar daftar restoran yang ditampilkan.
-4. Bundle Optimization
+
+4. Bundle Optimization #checked
    Syarat:
    Memasang bundle analyzer pada proyek submission.
    Gunakan teknik Code Splitting untuk memisahkan vendor code dari kode asli yang Anda tuliskan.
-5. Pertahankan syarat yang ada pada submission sebelumnya. Seperti penerapan PWA, responsibilitas tampilan, dan aksesibilitas pada website.
+
+5. Pertahankan syarat yang ada pada submission sebelumnya. Seperti penerapan PWA, responsibilitas tampilan, dan aksesibilitas pada website. #checked
