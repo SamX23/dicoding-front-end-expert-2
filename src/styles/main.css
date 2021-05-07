@@ -386,13 +386,12 @@ footer {
   bottom: 20px;
   right: 20px;
   z-index: 99;
-  border: none;
-  outline: none;
   background-color: var(--secondary);
-  color: var(--pink);
+  color: var(--primary);
   cursor: pointer;
   padding: 15px;
   border-radius: 10px;
+  border: 2px solid var(--pink);
   font-size: 1.5rem;
   font-weight: bold;
 }
